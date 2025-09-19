@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浜田高等学校 オープンスクール</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4 px-6 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">浜田高等学校</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">オープンスクールとは</a>
+                <a href="#schedule" class="text-gray-600 hover:text-blue-600 transition duration-300">プログラム</a>
+                <a href="#access" class="text-gray-600 hover:text-blue-600 transition duration-300">アクセス</a>
+                <a href="#register" class="text-white bg-blue-500 hover:bg-blue-600 rounded-full px-5 py-2 transition duration-300">参加申込</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-blue-50 z-40 p-6 pt-20 transition-transform duration-300 ease-in-out">
+        <nav class="flex flex-col space-y-6 text-center">
+            <a href="#about" class="text-2xl text-gray-800 hover:text-blue-600">オープンスクールとは</a>
+            <a href="#schedule" class="text-2xl text-gray-800 hover:text-blue-600">プログラム</a>
+            <a href="#access" class="text-2xl text-gray-800 hover:text-blue-600">アクセス</a>
+            <a href="#register" class="text-2xl text-white bg-blue-500 hover:bg-blue-600 rounded-full py-3">参加申込</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative bg-purple-600 text-white pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="bg-cover bg-center h-full opacity-30" style="background-image: url('https://placehold.co/1920x1080/FFFFFF/000000?text=Hamada+High+School')"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-shadow mb-4 animate-fade-in">
+                浜田高等学校オープンスクール参加者募集中！！
+            </h1>
+            <p class="text-xl lg:text-2xl font-light mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
+                未来の自分に出会う日。
+            </p>
+            <a href="#register" class="bg-yellow-400 text-blue-800 font-bold text-lg lg:text-xl px-8 py-4 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300 transform hover:scale-105 animate-bounce-in">
+                今すぐ申し込む！
+            </a>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="photos" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">昨年のオープンスクールの様子</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/D1C4E9/673AB7?text=昨年の写真1" alt="昨年のオープンスクールの様子1" class="w-full h-auto">
+                </div>
+                <div class="rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/C5CAE9/3F51B5?text=昨年の写真2" alt="昨年のオープンスクールの様子2" class="w-full h-auto">
+                </div>
+                <div class="rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/B3E5FC/03A9F4?text=昨年の写真3" alt="昨年のオープンスクールの様子3" class="w-full h-auto">
+                </div>
+                <div class="rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/E1F5FE/01579B?text=昨年の写真4" alt="昨年のオープンスクールの様子4" class="w-full h-auto">
+                </div>
+                <div class="rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/BBDEFB/2196F3?text=昨年の写真5" alt="昨年のオープンスクールの様子5" class="w-full h-auto">
+                </div>
+                <div class="rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/E3F2FD/1976D2?text=昨年の写真6" alt="昨年のオープンスクールの様子6" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">オープンスクールで何ができる？</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover transition duration-300">
+                    <div class="text-blue-500 text-5xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">学校の雰囲気を体験</h3>
+                    <p class="text-gray-600">
+                        在校生が案内するキャンパスツアーで、リアルな学校生活を体験できます。明るく開放的な校舎や最新の設備を自分の目で確かめてみましょう。
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover transition duration-300">
+                    <div class="text-blue-500 text-5xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">先輩と話そう</h3>
+                    <p class="text-gray-600">
+                        部活動や勉強のこと、高校生活の不安など、何でも気軽に先輩に質問できます。先輩たちの生の声を聞いて、高校生活を具体的にイメージしましょう。
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover transition duration-300">
+                    <div class="text-blue-500 text-5xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.25l-1.58 4.396a1 1 0 01-.152.278l-5.495 5.495a1 1 0 01-1.414 0l-1.06-1.06a1 1 0 010-1.414l5.495-5.495a1 1 0 01.278-.152l4.396-1.58a1 1 0 011.25.633zM14.73 7.873l1.879-1.879a1 1 0 00-1.414-1.414L13.316 6.459l.926.926z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">体験授業に参加</h3>
+                    <p class="text-gray-600">
+                        浜田高等学校ならではのユニークな授業を体験できます。興味のある分野を見つけたり、新しい発見があるかもしれません。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-16 md:py-24 bg-blue-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">当日のプログラム</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Program Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <span class="text-blue-500 font-bold text-2xl md:text-3xl w-24 text-center">9:00</span>
+                    <div class="w-full">
+                        <h3 class="text-xl font-semibold mb-2">受付開始</h3>
+                        <p class="text-gray-600">体育館にて受付を行います。参加票をお持ちください。</p>
+                    </div>
+                </div>
+                <!-- Program Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <span class="text-blue-500 font-bold text-2xl md:text-3xl w-24 text-center">9:30</span>
+                    <div class="w-full">
+                        <h3 class="text-xl font-semibold mb-2">全体説明会</h3>
+                        <p class="text-gray-600">校長先生からの挨拶、学校紹介、入試に関する説明を行います。</p>
+                    </div>
+                </div>
+                <!-- Program Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <span class="text-blue-500 font-bold text-2xl md:text-3xl w-24 text-center">10:30</span>
+                    <div class="w-full">
+                        <h3 class="text-xl font-semibold mb-2">体験授業・部活動見学</h3>
+                        <p class="text-gray-600">希望する体験授業に参加したり、各部活動の様子を見学できます。</p>
+                    </div>
+                </div>
+                <!-- Program Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <span class="text-blue-500 font-bold text-2xl md:text-3xl w-24 text-center">12:30</span>
+                    <div class="w-full">
+                        <h3 class="text-xl font-semibold mb-2">個別相談・終了</h3>
+                        <p class="text-gray-600">先生や先輩に個別で相談できます。不安なことは何でも聞いてください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section id="access" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">アクセス</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <p class="text-gray-600 mb-4">
+                    〒697-0026 島根県浜田市相生町1234<br>
+                    JR山陰本線「浜田駅」より徒歩10分
+                </p>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1576.2427670788643!2d134.89668478479536!3d34.49887132918511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a29a43a4933a3%3A0xcf82c2a0d1e55093!2sHamada%20High%20School!5e0!3m2!1sen!2sjp!4v1678223456789!5m2!1sen!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-16 md:py-24 bg-blue-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">参加申し込みはこちらから</h2>
+            <p class="text-lg lg:text-xl font-light mb-8 max-w-2xl mx-auto">
+                未来の自分を体験しよう！お友達を誘って、ぜひお気軽にご参加ください。
+            </p>
+            <a href="#" class="bg-yellow-400 text-blue-800 font-bold text-lg lg:text-xl px-12 py-5 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300 transform hover:scale-105">
+                今すぐ申し込む！
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 浜田高等学校. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // Close menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
